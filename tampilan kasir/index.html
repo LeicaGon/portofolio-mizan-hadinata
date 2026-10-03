@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portofolio | Leica44</title>
+	<meta name="description" content="Portofolio Leica44, pengembang website dan peserta kompetisi Cyber Security CTF." />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<div class="scroll-progress" id="scroll-progress" role="progressbar" aria-label="Progres membaca" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+	<nav>
+		<a class="brand" href="#top">MIZAN<span>.</span></a>
+		<div class="nav-links">
+			<a href="#work">Karya</a>
+			<a href="#skills">Keahlian</a>
+			<a href="#experience">Pengalaman</a>
+			<a href="#education">Pendidikan</a>
+			<a href="#contact">Kontak</a>
+			<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ganti tema">◐</button>
+			<a class="menu-dot" href="https://github.com/Leica44" target="_blank" rel="noopener noreferrer"><i></i> GitHub</a>
+		</div>
+	</nav>
+
+	<main id="top">
+		<section class="hero">
+			<div class="hero-copy">
+				<div class="eyebrow">PENGEMBANG WEBSITE / CYBER SECURITY</div>
+				<h1>Bangun<br />website,<br />pelajari <em>keamanan.</em></h1>
+				<p class="intro">Halo, saya Mizan Hadinata. Saya berfokus pada pengembangan website dan mempelajari keamanan siber melalui kompetisi CTF.</p>
+				<div class="profile-meta" aria-label="Informasi pribadi">
+					<div>
+						<span>Nama</span>
+						<strong>Mizan Hadinata</strong>
+					</div>
+					<div>
+						<span>Usia</span>
+						<strong id="user-age">0 tahun</strong>
+					</div>
+					<div>
+						<span>Tanggal lahir</span>
+						<strong>04 Januari 2010</strong>
+					</div>
+					<div>
+						<span>Ulang tahun</span>
+						<p class="birthday-status" id="birthday-status">Siap menyambut hari spesial</p>
+						<div class="birthday-timer" id="birthday-countdown" aria-live="polite">
+							<div><strong id="countdown-days">00</strong><small>Hari</small></div>
+							<div><strong id="countdown-hours">00</strong><small>Jam</small></div>
+							<div><strong id="countdown-minutes">00</strong><small>Menit</small></div>
+							<div><strong id="countdown-seconds">00</strong><small>Detik</small></div>
+						</div>
+					</div>
+					<div>
+						<span>Asal</span>
+						<strong>Kertosono, Indonesia</strong>
+					</div>
+					<div>
+						<span>Sekolah</span>
+						<strong>SMKN 1 Kertosono</strong>
+					</div>
+					<div>
+						<span>Jurusan</span>
+						<strong>RPL</strong>
+					</div>
+					<div>
+						<span>Hobi</span>
+						<strong>Coding &amp; CTF</strong>
+					</div>
+				</div>
+				<div class="mini-timeline" aria-label="Riwayat singkat">
+					<div class="timeline-item">
+						<span>2010</span>
+						<p>Lahir</p>
+					</div>
+					<div class="timeline-item">
+						<span>2018</span>
+						<p>Pertama tertarik teknologi</p>
+					</div>
+					<div class="timeline-item">
+						<span>2023</span>
+						<p>Mulai belajar web</p>
+					</div>
+					<div class="timeline-item">
+						<span>2025</span>
+						<p>RPL &amp; CTF</p>
+					</div>
+				</div>
+				<div class="birthday-highlight" id="birthday-highlight">
+					<div class="birthday-highlight-text">
+						<span class="mono">Birthday note</span>
+						<strong id="birthday-highlight-text">Siap menyambut hari spesial</strong>
+					</div>
+					<div class="birthday-date-badge">04 Jan</div>
+				</div>
+				<div class="actions">
+					<a class="button" href="#work">Lihat proyek <span>↗</span></a>
+					<a class="text-link" href="https://github.com/Leica44" target="_blank" rel="noopener noreferrer">Profil GitHub</a>
+				</div>
+			</div>
+
+			<div class="scene" aria-label="Kartu profil interaktif Leica44">
+				<div class="lanyard-anchor" aria-hidden="true"><span></span></div>
+				<svg class="tether" aria-hidden="true" preserveAspectRatio="none">
+					<path class="tether-shadow"></path>
+					<path class="tether-strap"></path>
+					<path class="tether-stitch"></path>
+				</svg>
+				<div class="scene-tools" aria-label="Kontrol kartu">
+					<button class="tool-button" id="reset-card" type="button" aria-label="Kembalikan posisi kartu">↺</button>
+					<button class="tool-button" id="auto-card" type="button" aria-label="Putar kartu otomatis">◌</button>
+				</div>
+				<div class="card-wrap" id="card" tabindex="0" role="button" aria-label="Kartu profil interaktif. Tekan Enter untuk membalik kartu.">
+					<span class="card-hook" id="card-hook" aria-hidden="true"></span>
+					<article class="card card-front">
+						<img class="portrait" src="WhatsApp Image 2026-10-03 at 22.34.13.jpeg" alt="Foto profil Mizan Hadinata" />
+						<div class="card-label"><small>WEB DEVELOPER / CTF</small><h2>Mizan<br />Hadinata</h2><p>Pengembangan Web · Cyber Security</p></div>
+					</article>
+					<article class="card card-back">
+						<div class="back-mark">✳</div>
+						<div><small class="mono">FOKUS SAYA</small><h3>Web &amp;<br />keamanan.</h3><p>Membangun website dan mengeksplorasi keamanan aplikasi melalui tantangan Cyber Security CTF.</p></div>
+						<small class="mono">GITHUB.COM / LEICA44</small>
+					</article>
+					<button class="flip" id="flip" aria-label="Balik kartu">↻</button>
+				</div>
+				<div class="card-status"><span class="status-dot"></span><span id="card-status-text">SIAP DILIHAT</span><span id="card-position">00 / 00</span></div>
+			</div>
+		</section>
+
+		<div class="ticker"><div class="ticker-track"><span>PENGEMBANGAN WEBSITE <b>✳</b></span><span>CYBER SECURITY <b>✳</b></span><span>CAPTURE THE FLAG <b>✳</b></span><span>PENGEMBANGAN WEBSITE <b>✳</b></span><span>CYBER SECURITY <b>✳</b></span><span>CAPTURE THE FLAG <b>✳</b></span></div></div>
+
+		<section class="coding-scene" aria-labelledby="coding-title">
+			<canvas class="coding-canvas" id="coding-canvas" aria-label="Adegan 3D seseorang sedang mengetik. Gerakkan pointer untuk melihat respons karakter." role="img"></canvas>
+			<div class="coding-caption"><span class="mono">MEJA KERJA / 3D</span><h2 id="coding-title">Baris demi<br /><em>baris.</em></h2></div>
+			<button class="coding-interact" id="coding-interact" type="button" aria-label="Sapa karakter 3D">Sapa karakter <span aria-hidden="true">↗</span></button>
+			<p class="coding-fallback" id="coding-fallback" hidden>Animasi 3D tidak tersedia pada browser ini.</p>
+		</section>
+
+		<section class="github-section" id="work">
+			<div class="section-head"><h2>Proyek<br /><em>GitHub.</em></h2><p>Repositori publik yang sedang dan pernah saya kerjakan.</p></div>
+			<div class="github-profile"><span class="mono">GITHUB / PROFILE</span><a href="https://github.com/Leica44" target="_blank" rel="noopener noreferrer">github.com/Leica44 <span aria-hidden="true">↗</span></a></div>
+			<div class="repo-tools" id="repo-tools" aria-label="Filter repositori" hidden>
+				<label class="repo-search"><span aria-hidden="true">⌕</span><span class="visually-hidden">Cari repositori</span><input id="repo-search" type="search" placeholder="Cari repositori" autocomplete="off" /></label>
+				<label><span class="visually-hidden">Filter bahasa</span><select id="repo-language" aria-label="Filter bahasa"><option value="">Semua bahasa</option></select></label>
+				<label><span class="visually-hidden">Urutkan repositori</span><select id="repo-sort" aria-label="Urutkan repositori"><option value="updated">Terbaru diperbarui</option><option value="stars">Bintang terbanyak</option><option value="name">Nama A–Z</option></select></label>
+				<button class="repo-favorites" id="repo-favorites" type="button" aria-pressed="false">☆ Favorit</button>
+				<button class="repo-clear" id="repo-clear" type="button" aria-label="Hapus semua filter" title="Hapus semua filter">↺</button>
+			</div>
+			<p class="repo-count" id="repo-count" aria-live="polite" hidden></p>
+			<div class="github-repos" id="github-repos" aria-live="polite"><p class="github-state" role="status">Memuat repositori publik...</p></div>
+		</section>
+
+		<section class="about-me">
+			<div class="section-head"><h2>Tentang<br /><em>saya.</em></h2><p>Saya adalah pelajar yang aktif belajar teknologi, desain, dan keamanan digital.</p></div>
+			<div class="about-grid">
+				<p>Saya adalah Mizan Hadinata, seorang pelajar di SMKN 1 Kertosono jurusan RPL yang senang mendalami web development, desain UI, serta keamanan siber. Saya selalu berusaha belajar hal baru lewat proyek kecil, tugas sekolah, dan tantangan CTF agar kemampuan saya terus berkembang.</p>
+				<ul>
+					<li>Aktif belajar website dan desain</li>
+					<li>Menikmati tantangan Cyber Security CTF</li>
+					<li>Siap terus berkembang dan berkolaborasi</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="goals">
+			<div class="section-head"><h2>Target<br /><em>saya.</em></h2><p>Tujuan jangka pendek dan masa depan yang sedang saya usahakan.</p></div>
+			<div class="goal-grid">
+				<article class="goal-card">
+					<span class="mono">01 / WEB</span>
+					<h3>Menjadi developer yang rapi</h3>
+					<p>Membangun website yang tidak hanya bagus tampilannya, tetapi juga nyaman digunakan dan mudah dipelihara.</p>
+				</article>
+				<article class="goal-card">
+					<span class="mono">02 / SECURITY</span>
+					<h3>Memahami keamanan digital</h3>
+					<p>Belajar lebih dalam mengenai keamanan aplikasi agar bisa membuat produk yang lebih aman dan bijak.</p>
+				</article>
+				<article class="goal-card">
+					<span class="mono">03 / MASA DEPAN</span>
+					<h3>Terus berkembang</h3>
+					<p>Terus belajar, mengeksplorasi hal baru, dan menyiapkan diri untuk karier yang lebih kuat di dunia teknologi.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="achievements">
+			<div class="section-head"><h2>Prestasi<br /><em>yang dicapai.</em></h2><p>Langkah kecil yang sudah saya capai dalam proses belajar dan berkembang.</p></div>
+			<div class="achievement-grid">
+				<article class="achievement-item">
+					<span class="mono">2024</span>
+					<h3>Belajar intensif web</h3>
+					<p>Meningkatkan kemampuan dalam pembuatan landing page, struktur UI, dan pengalaman pengguna.</p>
+				</article>
+				<article class="achievement-item">
+					<span class="mono">2025</span>
+					<h3>Menekuni CTF</h3>
+					<p>Mulai mengeksplorasi keamanan siber, belajar analisis, dan mencoba tantangan digital.</p>
+				</article>
+				<article class="achievement-item">
+					<span class="mono">SEKARANG</span>
+					<h3>Terus berkembang</h3>
+					<p>Masih aktif belajar, menambah pengalaman, dan memperbaiki kualitas karya dari hari ke hari.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="skills" id="skills">
+			<div class="section-head"><h2>Keahlian<br /><em>utama.</em></h2><p>Bidang yang saya pelajari dan eksplorasi melalui pengembangan website serta kompetisi CTF.</p></div>
+			<div class="skill-groups">
+				<article class="skill-group">
+					<span class="mono">01 / WEB</span>
+					<h3>Website</h3>
+					<ul><li>Desain website</li><li>Pengembangan website</li></ul>
+				</article>
+				<article class="skill-group">
+					<span class="mono">02 / CYBERSECURITY</span>
+					<h3>Cyber Security CTF</h3>
+					<ul><li>Red Team</li><li>Kriptografi</li><li>Pwn</li><li>Forensik</li><li>Web Security</li></ul>
+				</article>
+			</div>
+		</section>
+
+		<section class="education" id="education">
+			<div class="section-head"><h2>Riwayat<br /><em>pendidikan.</em></h2><p>Latar pendidikan saya di bidang Rekayasa Perangkat Lunak.</p></div>
+			<article class="education-item">
+				<div><span class="mono">2025 / Pelajar</span><h3>SMKN 1 Kertosono</h3></div>
+				<p>Rekayasa Perangkat Lunak</p>
+			</article>
+		</section>
+
+		<section class="experience" id="experience">
+			<div class="section-head"><h2>Pengalaman<br /><em>kompetisi.</em></h2><p>Perjalanan kompetisi di bidang pengembangan website dan keamanan siber.</p></div>
+			<ol class="experience-timeline">
+				<li class="timeline-entry">
+					<span class="timeline-label">WEBSITE / LOMBA</span>
+					<div><h3>Lomba Desain &amp; Pengembangan Website</h3><p>Mengikuti kompetisi yang menggabungkan perancangan tampilan dan pengembangan website.</p></div>
+				</li>
+				<li class="timeline-entry">
+					<span class="timeline-label">KEAMANAN SIBER / CTF</span>
+					<div><h3>Lomba Cyber Security CTF</h3><p>Mengikuti tantangan keamanan siber dalam beberapa kategori:</p><ul class="experience-tags"><li>Red Team</li><li>Kriptografi</li><li>Pwn</li><li>Forensik</li><li>Web</li></ul></div>
+				</li>
+			</ol>
+		</section>
+
+		<section class="quote-section">
+			<div class="quote-box">
+				<span class="mono">MOTO HIDUP</span>
+				<p>“Belajar bukan hanya untuk pintar, tapi untuk membuat diri lebih siap menghadapi masa depan yang terus berubah.”</p>
+			</div>
+		</section>
+
+		<section class="spotify-section" aria-labelledby="spotify-title">
+			<div class="section-head">
+				<h2>Soundtrack<br /><em>favorit.</em></h2>
+				<p>Putar musik favorit sambil menjelajahi halaman ini.</p>
+			</div>
+			<div class="spotify-player-wrap">
+				<div class="spotify-info">
+					<span class="mono">SPOTIFY</span>
+					<div class="spotify-status" aria-live="polite">
+						<span class="spotify-live-dot" aria-hidden="true"></span>
+						<span id="spotify-status-label">Now Playing</span>
+					</div>
+					<div class="spotify-meta-row">
+						<div class="spotify-equalizer" aria-hidden="true">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<button class="spotify-like" id="spotify-like" type="button" aria-label="Tambah ke favorit" aria-pressed="true">♥</button>
+					</div>
+					<h3 id="spotify-title">Lagu pilihan saya.</h3>
+					<p id="spotify-now-playing">Ours to Keep — Kendis &amp; Adis</p>
+					<div class="spotify-progress" aria-hidden="true"><span id="spotify-progress-bar"></span></div>
+					<div class="spotify-picks" role="group" aria-label="Pilih lagu atau artis">
+							<button class="spotify-pick active" type="button" data-spotify-src="https://www.youtube.com/embed/hv-tflI7pM4" data-spotify-title="Ours to Keep — Kendis &amp; Adis" aria-pressed="true">Ours to Keep</button>
+							<button class="spotify-pick" type="button" data-spotify-src="https://open.spotify.com/embed/track/7LVHVU3tWfcxj5aiPFEW4Q" data-spotify-title="Fix You — Coldplay" aria-pressed="false">Fix You</button>
+							<button class="spotify-pick" type="button" data-spotify-src="https://open.spotify.com/embed/track/1XGmzt0PVuFgQYYnV2It7A" data-spotify-title="Payphone — Maroon 5" aria-pressed="false">Payphone</button>
+							<button class="spotify-pick" type="button" data-spotify-src="https://open.spotify.com/embed/artist/66CXWjxzNUsdJxJ2JdwvnR" data-spotify-title="Ariana Grande" aria-pressed="false">Ariana Grande</button>
+							<button class="spotify-pick" type="button" data-spotify-src="https://open.spotify.com/embed/artist/6eUKZXaKkcviH0Ku9w2n3V" data-spotify-title="Ed Sheeran" aria-pressed="false">Ed Sheeran</button>
+							<button class="spotify-pick" type="button" data-spotify-src="https://open.spotify.com/embed/artist/4AK6F7OLvEQ5QYCBNiQWHu" data-spotify-title="One Direction" aria-pressed="false">One Direction</button>
+						</div>
+					<div class="spotify-controls">
+						<button class="spotify-toggle" id="spotify-toggle" type="button" aria-label="Jeda pemutar musik">Pause</button>
+					</div>
+				</div>
+				<div class="spotify-embed">
+						<iframe id="spotify-frame" style="border-radius:12px" src="https://www.youtube.com/embed/hv-tflI7pM4" width="100%" height="352" frameBorder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy" title="Ours to Keep — Kendis &amp; Adis di website"></iframe>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<section class="thank-you-section" aria-labelledby="thank-you-title">
+		<div class="thank-you-box">
+			<span class="mono">TERIMA KASIH</span>
+			<h2 id="thank-you-title">Terima kasih<br /><em>telah berkunjung.</em></h2>
+			<p>Senang bisa berbagi cerita, karya, dan musik yang menemani hari-hari ini. Semoga kamu selalu diberi kelapangan hati dan semangat baru.</p>
+		</div>
+	</section>
+
+	<section class="contact-section" id="contact">
+		<div class="contact-copy"><p class="eyebrow">Kontak</p><h2>Mari<br /><em>terhubung.</em></h2><p>Untuk melihat proyek dan berdiskusi seputar website atau Cyber Security, kunjungi profil GitHub atau Instagram saya.</p><div class="contact-actions"><a class="contact-email" href="https://github.com/Leica44" target="_blank" rel="noopener noreferrer">Buka profil GitHub ↗</a><a class="contact-email" href="https://www.instagram.com/mizann.h4?stkn=MTZwY2F5eXlhYzF6eg==" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></div>
+	</section>
+	<footer class="footer">
+		<div class="footer-brand">
+			<span>© 2026 Mizan Hadinata</span>
+			<strong>Portofolio pribadi</strong>
+		</div>
+		<div class="footer-links">
+			<a href="https://github.com/Leica44" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+			<a href="https://www.instagram.com/mizann.h4?stkn=MTZwY2F5eXlhYzF6eg==" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+			<a href="#top">Kembali ke atas ↑</a>
+		</div>
+	</footer>
+	<button class="back-to-top" id="back-to-top" type="button" aria-label="Kembali ke atas" title="Kembali ke atas" hidden>↑</button>
+
+	<script src="script.js" defer></script>
+	<script type="module" src="coding-scene.js"></script>
+</body>
+</html>
